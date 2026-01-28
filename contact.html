@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dreamy — Contact</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="bg-stars" aria-hidden="true">
+    <span class="star big" style="left:14%; top:16%; animation-delay:.7s"></span>
+    <span class="star" style="left:36%; top:12%; animation-delay:1.3s"></span>
+    <span class="star big" style="left:58%; top:18%; animation-delay:1.9s"></span>
+    <span class="star" style="left:80%; top:14%; animation-delay:.9s"></span>
+    <span class="star" style="left:22%; top:72%; animation-delay:1.6s"></span>
+    <span class="star big" style="left:88%; top:70%; animation-delay:.5s"></span>
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-vf.png" alt="Logo Dreamy" />
+        <div>
+          <div class="name">Dreamy</div>
+          <div class="tag">Explore tes rêves ✨</div>
+        </div>
+      </a>
+
+      <button id="burger" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="grid-2">
+        <div class="card fade-up delay-1">
+          <h1>Contact</h1>
+          <p>Une idée, un bug, une suggestion ? Écris-nous 💌</p>
+
+          <form id="contactForm" style="margin-top:.9rem">
+            <label class="label" for="name">Nom</label>
+            <input id="name" class="input" placeholder="Ton nom" required />
+
+            <label class="label" for="email">Email</label>
+            <input id="email" class="input" type="email" placeholder="ton@email.com" required />
+
+            <label class="label" for="message">Message</label>
+            <textarea id="message" class="textarea" placeholder="Ton message..." required></textarea>
+
+            <div style="display:flex; gap:.7rem; flex-wrap:wrap; margin-top:.8rem">
+              <button class="btn btn-primary" type="submit">Envoyer</button>
+              <button class="btn" type="reset">Effacer</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="card fade-up delay-2">
+          <h2>Démo Figma</h2>
+          <p>Tu peux aussi voir le prototype complet sur Figma.</p>
+
+          <div style="margin-top:1rem; display:flex; gap:.7rem; flex-wrap:wrap">
+            <a class="btn btn-primary" href="FIGMA_URL_ICI" target="_blank" rel="noopener">Ouvrir la démo</a>
+            <a class="btn" href="about.html">En savoir plus</a>
+          </div>
+
+          <div class="card" style="margin-top:1rem; box-shadow:none; background: rgba(183,217,240,.45)">
+            <b style="font-family:Mulish">Note</b>
+            <div class="small">Formulaire = démo front-end (pas d’envoi réel).</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="small">© 2026 Dreamy — Prototype</div>
+        <div class="small">Animations: étoiles + glow + hover</div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

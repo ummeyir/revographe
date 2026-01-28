@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dreamy — À propos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="bg-stars" aria-hidden="true">
+    <span class="star big" style="left:10%; top:18%; animation-delay:.4s"></span>
+    <span class="star" style="left:28%; top:14%; animation-delay:1.2s"></span>
+    <span class="star" style="left:46%; top:22%; animation-delay:.9s"></span>
+    <span class="star big" style="left:72%; top:12%; animation-delay:1.8s"></span>
+    <span class="star" style="left:84%; top:26%; animation-delay:1.0s"></span>
+    <span class="star big" style="left:20%; top:70%; animation-delay:2.0s"></span>
+    <span class="star" style="left:62%; top:72%; animation-delay:.7s"></span>
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-vf.png" alt="Logo Dreamy" />
+        <div>
+          <div class="name">Dreamy</div>
+          <div class="tag">Explore tes rêves ✨</div>
+        </div>
+      </a>
+
+      <button id="burger" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="grid-2">
+        <div class="card fade-up delay-1">
+          <h1>À propos</h1>
+          <p>
+            Dreamy est un concept d’application qui invite les utilisateurs à décrire leurs rêves
+            et à explorer l’inspiration derrière ces histoires nocturnes.
+          </p>
+          <p style="margin-top:.8rem">
+            Pour l’instant, nous présentons une version prototype (front-end) + une démo sur Figma.
+          </p>
+
+          <div style="margin-top:1.1rem; display:flex; gap:.7rem; flex-wrap:wrap">
+            <a class="btn btn-primary" href="FIGMA_URL_ICI" target="_blank" rel="noopener">Voir la démo</a>
+            <a class="btn" href="index.html">Retour accueil</a>
+          </div>
+        </div>
+
+        <div class="card fade-up delay-2">
+          <h2>Notre direction</h2>
+          <p>Un design doux, une expérience fluide, et des micro-animations “rêve”.</p>
+
+          <div style="margin-top:1rem; display:grid; gap:.7rem">
+            <div class="card" style="box-shadow:none; background: rgba(183,217,240,.45)">
+              <b style="font-family:Mulish">UI</b>
+              <div class="small">Typo + palette cohérentes</div>
+            </div>
+            <div class="card" style="box-shadow:none; background: rgba(197,174,226,.35)">
+              <b style="font-family:Mulish">UX</b>
+              <div class="small">Navigation simple, responsive</div>
+            </div>
+            <div class="card" style="box-shadow:none; background: rgba(139,175,226,.28)">
+              <b style="font-family:Mulish">Next</b>
+              <div class="small">Backend + IA (plus tard)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="small">© 2026 Dreamy — Prototype</div>
+        <div class="small">Mulish (titres) · Nunito (texte)</div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
