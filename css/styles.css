@@ -313,6 +313,14 @@ main{padding: 1.4rem 0 2.6rem}
   justify-content:center;
   isolation:isolate;
 }
+.hero-video{
+  width: 100%;
+  min-height: 320px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: var(--shadow-soft);
+  pointer-events: none;
+}
 .glow-orb{
   width: 210px;
   height: 210px;
