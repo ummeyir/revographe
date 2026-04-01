@@ -73,9 +73,11 @@ function initIntroVideo() {
 
   const introScreen = $('#introVideoScreen');
   const introVideo = $('#introVideo');
+  const skipIntroBtn = $('#skipIntroBtn');
   if (!introScreen || !introVideo) return;
 
   const closeIntro = () => {
+    introVideo.pause();
     introScreen.classList.add('is-hidden');
   };
 
@@ -90,6 +92,13 @@ function initIntroVideo() {
     window.clearTimeout(fallbackTimer);
     window.setTimeout(closeIntro, 600);
   });
+
+  if (skipIntroBtn) {
+    skipIntroBtn.addEventListener('click', () => {
+      window.clearTimeout(fallbackTimer);
+      closeIntro();
+    });
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
