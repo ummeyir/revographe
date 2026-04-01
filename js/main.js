@@ -67,7 +67,33 @@ function setActiveLink() {
   });
 }
 
+// ===== Home intro video =====
+function initIntroVideo() {
+  if (!document.body.classList.contains('home-page')) return;
+
+  const introScreen = $('#introVideoScreen');
+  const introVideo = $('#introVideo');
+  if (!introScreen || !introVideo) return;
+
+  const closeIntro = () => {
+    introScreen.classList.add('is-hidden');
+  };
+
+  const fallbackTimer = window.setTimeout(closeIntro, 9000);
+
+  introVideo.addEventListener('ended', () => {
+    window.clearTimeout(fallbackTimer);
+    closeIntro();
+  });
+
+  introVideo.play().catch(() => {
+    window.clearTimeout(fallbackTimer);
+    window.setTimeout(closeIntro, 600);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  initIntroVideo();
   initNavbar();
   initForms();
   setActiveLink();
