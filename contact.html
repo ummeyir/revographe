@@ -3,89 +3,98 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>KUMO — Contact</title>
+  <title>KUMO - Contact</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
-
-  <div class="bg-stars" aria-hidden="true">
-    <span class="star big" style="left:14%; top:16%; animation-delay:.7s"></span>
-    <span class="star" style="left:36%; top:12%; animation-delay:1.3s"></span>
-    <span class="star big" style="left:58%; top:18%; animation-delay:1.9s"></span>
-    <span class="star" style="left:80%; top:14%; animation-delay:.9s"></span>
-    <span class="star" style="left:22%; top:72%; animation-delay:1.6s"></span>
-    <span class="star big" style="left:88%; top:70%; animation-delay:.5s"></span>
-  </div>
-
-  <header class="header">
-    <div class="container nav">
-      <a class="brand" href="index.html">
-        <img src="assets/logo-vf.png" alt="Logo Dreamy" />
-        <div>
-          <div class="name">KUMO</div>
-          <div class="tag">Explore tes rêves ✨</div>
-        </div>
+<body class="site-page">
+  <header class="header home-header">
+    <div class="container nav home-nav">
+      <a class="brand home-brand" href="index.html">
+        <img src="assets/logo-vf.png" alt="Logo KUMO" />
+        <div class="name">KUMO</div>
       </a>
 
       <button id="burger" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <nav id="navLinks" class="nav-links">
-        <a href="index.html">Accueil</a>
-        <a href="about.html">À propos</a>
+      <nav id="navLinks" class="nav-links home-nav-links">
+        <a href="index.html">Home</a>
+        <a href="reves.html">Reves</a>
+        <a href="about.html">A propos</a>
         <a href="contact.html">Contact</a>
+        <a class="btn btn-pill nav-cta" href="FIGMA_URL_ICI" target="_blank" rel="noopener">Je telecharge l'application</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <div class="container">
-      <section class="grid-2">
-        <div class="card fade-up delay-1">
-          <h1>Contact</h1>
-          <p>Une idée, un bug, une suggestion ? Écris-nous 💌</p>
+  <main class="inner-main">
+    <div class="container inner-shell">
+      <section class="inner-hero fade-up delay-1">
+        <p class="eyebrow">Contact</p>
+        <h1>Besoin d'informations ?</h1>
+        <p class="lead">
+          Une question, un retour ou une demande a propos du projet KUMO ? Tu peux nous ecrire ici.
+        </p>
+      </section>
 
-          <form id="contactForm" style="margin-top:.9rem">
+      <section class="inner-grid fade-up delay-2">
+        <article class="panel">
+          <h2>Nous contacter</h2>
+          <form id="contactForm" class="contact-form">
             <label class="label" for="name">Nom</label>
-            <input id="name" class="input" placeholder="Ton nom" required />
+            <input id="name" class="input dark-input" placeholder="Ton nom" required />
 
             <label class="label" for="email">Email</label>
-            <input id="email" class="input" type="email" placeholder="ton@email.com" required />
+            <input id="email" class="input dark-input" type="email" placeholder="ton@email.com" required />
 
             <label class="label" for="message">Message</label>
-            <textarea id="message" class="textarea" placeholder="Ton message..." required></textarea>
+            <textarea id="message" class="textarea dark-input" placeholder="Ton message..." required></textarea>
 
-            <div style="display:flex; gap:.7rem; flex-wrap:wrap; margin-top:.8rem">
-              <button class="btn btn-primary" type="submit">Envoyer</button>
-              <button class="btn" type="reset">Effacer</button>
+            <div class="panel-actions">
+              <button class="btn btn-pill" type="submit">Envoyer</button>
             </div>
           </form>
-        </div>
+        </article>
 
-        <div class="card fade-up delay-2">
-          <h2>Démo Figma</h2>
-          <p>Tu peux aussi voir le prototype complet sur Figma.</p>
-
-          <div style="margin-top:1rem; display:flex; gap:.7rem; flex-wrap:wrap">
-            <a class="btn btn-primary" href="FIGMA_URL_ICI" target="_blank" rel="noopener">Ouvrir la démo</a>
-            <a class="btn" href="about.html">En savoir plus</a>
+        <article class="panel panel-soft">
+          <h2>En apprendre plus</h2>
+          <p>
+            Tu peux aussi consulter la maquette du projet pour voir l'experience cible et la direction
+            imaginee pour l'application.
+          </p>
+          <div class="info-stack">
+            <div class="mini-panel">
+              <h3>Demo</h3>
+              <p>Acces direct a la maquette pour comprendre le parcours imagine.</p>
+            </div>
+            <div class="mini-panel">
+              <h3>Projet</h3>
+              <p>Une vitrine pour presenter KUMO avant le developpement complet.</p>
+            </div>
           </div>
-
-          <div class="card" style="margin-top:1rem; box-shadow:none; background: rgba(183,217,240,.45)">
-            <b style="font-family:Mulish">Note</b>
-            <div class="small">Formulaire = démo front-end (pas d’envoi réel).</div>
+          <div class="panel-actions">
+            <a class="btn btn-pill" href="FIGMA_URL_ICI" target="_blank" rel="noopener">Ouvrir la demo</a>
           </div>
-        </div>
+        </article>
       </section>
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="small">© 2026 KUMO — Prototype</div>
-        <div class="small">Animations: étoiles + glow + hover</div>
+  <footer class="footer site-footer">
+    <div class="container site-footer-grid">
+      <div>
+        <div class="footer-brand">KUMO</div>
+        <p class="footer-copy">Une porte d'entree vers la maquette et l'univers du projet.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="reves.html">Reves</a>
+        <a href="about.html">A propos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <a class="btn btn-pill" href="FIGMA_URL_ICI" target="_blank" rel="noopener">Voir la demo</a>
       </div>
     </div>
   </footer>
