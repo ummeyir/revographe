@@ -592,6 +592,11 @@ main{padding: 1.4rem 0 2.6rem}
   transform: translateY(-1px);
 }
 
+.site-page .nav-links .btn-pill.nav-cta:hover,
+.home-page .nav-links .btn-pill.nav-cta:hover{
+  color: #fff;
+}
+
 .nav-cta{
   margin-left: .6rem;
   text-transform: none;
