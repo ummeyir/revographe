@@ -616,6 +616,11 @@ main{padding: 1.4rem 0 2.6rem}
   white-space: nowrap;
 }
 
+.site-page .nav-links .btn-pill.nav-cta,
+.home-page .nav-links .btn-pill.nav-cta{
+  color: #000;
+}
+
 .home-hero,
 .home-section{
   max-width: 980px;
