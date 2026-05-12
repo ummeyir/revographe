@@ -691,8 +691,47 @@ main{padding: 1.4rem 0 2.6rem}
 
 .themes-grid{
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.1rem;
+  width: min(100%, 900px);
+  margin: 0 auto;
+}
+
+.themes-grid .theme-card{
+  display: block;
+  min-height: 0;
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease);
+  will-change: transform;
+}
+
+.themes-grid .theme-card:hover{
+  transform: translateY(-8px) scale(1.03);
+  border-color: rgba(243,255,255,.32);
+  box-shadow: 0 26px 46px rgba(2,18,37,.34);
+}
+
+.themes-grid .theme-media{
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  min-height: 0;
+  height: auto;
+  object-fit: cover;
+  transition: transform .35s var(--ease), filter .35s var(--ease);
+  will-change: transform;
+}
+
+.themes-grid .theme-card:hover .theme-media{
+  transform: scale(1.12);
+  filter: saturate(1.08) brightness(1.04);
+}
+
+.theme-label{
+  padding: .9rem .7rem 1rem;
+  color: var(--white);
+  font-family: "Mulish", system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
 }
 
 .theme-card{
@@ -926,7 +965,7 @@ main{padding: 1.4rem 0 2.6rem}
 
 @media (max-width: 980px){
   .themes-grid{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .about-layout{
