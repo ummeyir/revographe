@@ -467,12 +467,14 @@ main{padding: 1.4rem 0 2.6rem}
 }
 
 .home-page{
-  background: #0a2948;
+  background:
+    linear-gradient(180deg, #07182f 0%, #0a2948 48%, #102f56 100%);
   color: var(--white);
 }
 
 .site-page{
-  background: #0a2948;
+  background:
+    linear-gradient(180deg, #07182f 0%, #0a2948 48%, #102f56 100%);
   color: var(--white);
 }
 
@@ -574,6 +576,22 @@ main{padding: 1.4rem 0 2.6rem}
   outline: 0;
   color: var(--white);
   transform: none;
+}
+
+.site-page .nav-links a.nav-cta,
+.home-page .nav-links a.nav-cta{
+  color: #123154;
+  border-color: rgba(243,255,255,.75);
+  background: linear-gradient(180deg, #f8ffff, #b7d9f0);
+}
+
+.site-page .nav-links a.nav-cta:hover,
+.home-page .nav-links a.nav-cta:hover{
+  color: #07182f;
+  background: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 12px 28px rgba(183,217,240,.28);
+  transform: translateY(-1px);
 }
 
 .btn-pill{
